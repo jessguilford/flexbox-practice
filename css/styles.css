@@ -2,7 +2,7 @@
 
 *:not(body):not(html) {
   box-sizing: border-box;
-  border: 1px solid grey;
+  /*border: 1px solid grey;*/
 }
 
 .cover {
@@ -94,19 +94,23 @@ ul{
   border-radius: 0;
   border: 0;
   margin: 25px 0;
-  padding: 10px;
 }
 
 .flex-form > * {
   height: 50px;
   flex-basis: 100px;
-
+  border: 1px solid rgba(0, 0, 0, 0);
 }
 
 input[type="search"] {
   flex-basis: 500px;
 }
 
+input[type="submit"] {
+  font-size: 1em;
+  color: #fff;
+  background-color: #ff5a5f;
+}
 
 /* Media Queries */
 
