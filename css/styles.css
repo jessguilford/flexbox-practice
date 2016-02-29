@@ -1,0 +1,122 @@
+/* Wireframing */
+
+*:not(body):not(html) {
+  box-sizing: border-box;
+  border: 1px solid grey;
+}
+
+.cover {
+  background-image: url("../images/bridge.jpeg");
+  background-size: cover;
+  background-color: #eee;
+  height: 800px;
+}
+
+/* End wireframing */
+/* Base */
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+.nav {
+  width: 100%;
+  margin: 0 auto;
+  height: 50px;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: flex-end;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.nav li {
+  flex: 0 1 5%;
+  text-align: center;
+  border: 1px dashed #abcdef;
+  padding: 0;
+  margin: 0 10px;
+}
+
+.nav .brand {
+  text-align: left;
+  flex: 1 1 100px;
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.intro {
+  text-align: center;
+  color: #fff;
+}
+
+.intro button {
+  font-size: 1.3em;
+  color: #fff;
+  background-color: rgba(225, 225, 225, 0.8);
+  border-radius: 5px;
+  border-style: none;
+  padding: 10px 15px;
+}
+
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  text-align: center;
+}
+
+.flex-form {
+  display: flex;
+  justify-content: center;
+  width: 900px;
+  background-color: white;
+  line-height: 50px;
+  border-radius: 0;
+  border: 0;
+  margin: 25px 0;
+  padding: 10px;
+}
+
+.flex-form > * {
+  height: 50px;
+  flex-basis: 100px;
+
+}
+
+input[type="search"] {
+  flex-basis: 500px;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1052px) {
+
+  .flex-form {
+    width: 700px;
+  }
+
+  input[type="search"] {
+    flex-basis: 300px;
+  }
+}
